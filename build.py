@@ -9,7 +9,7 @@ from natsort import natsorted
 PREFIX = 'adamrehn/ue4-runtime'
 
 # The list of supported Ubuntu LTS releases
-RELEASES = ['16.04', '18.04', '20.04']
+RELEASES = ['18.04']
 
 # The Ubuntu release that our alias tags point to
 ALIAS_RELEASE = '20.04'
