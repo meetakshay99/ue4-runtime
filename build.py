@@ -76,9 +76,9 @@ for ubuntuRelease in RELEASES:
 	# The base description string for all image tags within the current Ubuntu release
 	releaseDescription = 'Ubuntu {} + OpenGL + Vulkan'.format(ubuntuRelease)
 	
-    # Retrieve the list of tags for the nvidia/cudagl base image for the current Ubuntu release
-    cudaSuffix = '-devel-ubuntu{}'.format(ubuntuRelease)
-    cudaTags = natsorted([tag for tag in listTags('nvidia/cudagl') if tag.endswith(cudaSuffix)])
+	# Retrieve the list of tags for the nvidia/cudagl base image for the current Ubuntu release
+	cudaSuffix = '-devel-ubuntu{}'.format(ubuntuRelease)
+	cudaTags = natsorted([tag for tag in listTags('nvidia/cudagl') if tag.endswith(cudaSuffix)])
 	
 	# Generate our list of ue4-runtime image variants and corresponding base images
 	variants = {'vulkan': 'nvidia/opengl:1.2-glvnd-runtime-ubuntu{}'.format(ubuntuRelease)}
